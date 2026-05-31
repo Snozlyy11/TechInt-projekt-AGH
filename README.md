@@ -1,0 +1,1 @@
+# TechInt-projekt-AGH

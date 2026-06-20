@@ -140,4 +140,4 @@ kreatorQuiz/
 | `appsettings.Development.json` | `Jwt:Secret` | Klucz podpisywania tokenów JWT |
 | `appsettings.Development.json` | `OpenAI:ApiKey` | Klucz API OpenAI |
 
-> **Ważne:** Pliki `.env.local` i `appsettings.Development.json` są w `.gitignore` i nigdy nie powinny trafiać do repozytorium.
+

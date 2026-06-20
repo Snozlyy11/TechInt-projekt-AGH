@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg:      #FFFDF5;
+  --fg:      #1a1a18;
+  --bg-card: #ffffff;
+  --border:  #E8E6DF;
+  --bg-muted:#F7F6F2;
+}
+
+.dark {
+  --bg:      #1a1918;
+  --fg:      #F5F3EC;
+  --bg-card: #252420;
+  --border:  #3a3935;
+  --bg-muted:#2a2925;
+}
+
+@layer base {
+  *, *::before, *::after { box-sizing: border-box; }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Nunito Sans', system-ui, sans-serif;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: background 0.2s ease, color 0.2s ease;
+  }
+
+  #root {
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  ::selection {
+    background: #EEEDFE;
+    color: #3C3489;
+  }
+
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 9999px; }
+  ::-webkit-scrollbar-thumb:hover { opacity: 0.8; }
+}
+
+/* Rich text editor placeholder */
+[contenteditable][data-placeholder]:empty::before {
+  content: attr(data-placeholder);
+  color: var(--fg);
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+@layer components {
+  .animate-stagger > * {
+    opacity: 0;
+    animation: fadeUp 0.55s ease forwards;
+  }
+  .animate-stagger > *:nth-child(1) { animation-delay: 0.05s; }
+  .animate-stagger > *:nth-child(2) { animation-delay: 0.15s; }
+  .animate-stagger > *:nth-child(3) { animation-delay: 0.25s; }
+  .animate-stagger > *:nth-child(4) { animation-delay: 0.35s; }
+  .animate-stagger > *:nth-child(5) { animation-delay: 0.45s; }
+  .animate-stagger > *:nth-child(6) { animation-delay: 0.55s; }
+
+  .glass {
+    background: color-mix(in srgb, var(--bg) 75%, transparent);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  .card {
+    background: var(--bg-card);
+    border: 1.5px solid var(--border);
+    border-radius: 16px;
+  }
+
+  .bg-muted {
+    background: var(--bg-muted);
+  }
+}

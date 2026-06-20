@@ -1,6 +1,6 @@
 # KreatorQuiz
 
-Platforma edukacyjna do tworzenia, udostępniania i rozwiązywania quizów w formacie ABCD. Projekt studencki AGH — Technologie Internetowe.
+Platforma edukacyjna do tworzenia, udostępniania i rozwiązywania quizów w formacie ABCD. Projekt studencki AGH - Technologie Internetowe.
 
 ## Technologie
 

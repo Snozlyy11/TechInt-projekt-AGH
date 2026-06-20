@@ -86,7 +86,7 @@ export default function Catalog() {
         ) : (
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: 20 }}>
             {filtered.map(quiz => (
-              <QuizCard key={quiz.id} quiz={quiz} from="/catalog" />
+              <QuizCard key={quiz.id} quiz={quiz} onPlay={() => navigate('/quiz/' + quiz.id)} />
             ))}
           </div>
         )}

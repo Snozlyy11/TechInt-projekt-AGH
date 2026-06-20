@@ -1,6 +1,6 @@
 # KreatorQuiz
 
-Platforma edukacyjna do tworzenia, udostępniania i rozwiązywania quizów w formacie ABCD. Projekt studencki AGH — Technologie Internetowe.
+Platforma edukacyjna do tworzenia, udostępniania i rozwiązywania quizów w formacie ABCD. Projekt studencki AGH - Technologie Internetowe.
 
 ## Technologie
 
@@ -140,4 +140,4 @@ kreatorQuiz/
 | `appsettings.Development.json` | `Jwt:Secret` | Klucz podpisywania tokenów JWT |
 | `appsettings.Development.json` | `OpenAI:ApiKey` | Klucz API OpenAI |
 
-> **Ważne:** Pliki `.env.local` i `appsettings.Development.json` są w `.gitignore` i nigdy nie powinny trafiać do repozytorium.
+
